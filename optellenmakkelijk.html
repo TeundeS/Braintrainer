@@ -28,10 +28,10 @@ var b=Math.floor(Math.random()*11);
 var c= a+b;
 //-->
 
-
-/*$('document').ready(function() {
+document.addEventListener("deviceready", zetDeTitel, false);
+function zetDeTitel() {
 	$('#title').text("Bereken de som van "+a+" + "+b);
-});*/
+}
 
 function reloadPage() {
 	location.reload();

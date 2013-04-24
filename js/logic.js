@@ -13,10 +13,6 @@ function testCam() {
 	});
 }
 
-function titelOptellenMakkelijk() [
-	$('#title').text("Bereken de som van "+a+" + "+b);
-}
-
 var app = {
     // Application Constructor
     initialize: function() {
