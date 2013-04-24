@@ -19,29 +19,6 @@
 	<link href="css/style.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/styles.css">
 	
-	<script>
-
-function reloadPage() {
-	location.reload();
-}
-
-function checkAntwoord(){
-	var ingevuld;
-	ingevuld = parseInt($('#d').val());
-	if (ingevuld === ""){
-		$('p#antwoord').text("vul het in! Zo moeilijk is de som niet.");
-	}
-	else if (c == ingevuld){
-		$('p#antwoord').text("goed gedaan");
-	}
-	else{
-		$('p#antwoord').text("dommerik");
-	}
-		
-	 setTimeout(reloadPage, 1000);
-}
-
-</script>
 </head>
 <body>
     <!-- de som -->
@@ -58,6 +35,26 @@ function checkAntwoord(){
 				document.addEventListener("deviceready", titel, false);
 				function titel() {
 					$('#title').text("Bereken de som van " + a+ "+"+b);
+				}
+				
+				function reloadPage() {
+					location.reload();
+				}
+
+				function checkAntwoord(){
+					var ingevuld;
+					ingevuld = parseInt($('#d').val());
+					if (ingevuld === ""){
+						$('p#antwoord').text("vul het in! Zo moeilijk is de som niet.");
+					}
+					else if (c == ingevuld){
+						$('p#antwoord').text("goed gedaan");
+					}
+					else{
+						$('p#antwoord').text("dommerik");
+					}
+						
+					 setTimeout(reloadPage, 1000);
 				}
 			</script>
             <p id="title"></p>
