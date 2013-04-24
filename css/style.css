@@ -38,3 +38,8 @@ a:hover, a:active {
 	color: #ffffff;
 	text-decoration: none;
 }
+
+#hoofdmenu input {
+	background: #fff;
+	border: 1px solid #000;
+}
