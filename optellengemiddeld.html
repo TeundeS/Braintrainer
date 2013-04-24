@@ -19,41 +19,7 @@
 	<link href="css/style.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/styles.css">
 	
-	<script language="Javascript">
-<!--
-	
 
-var a=Math.floor(Math.random()*101);
-var b=Math.floor(Math.random()*101);
-var c= a+b
-//-->
-
-
-$('document').ready(function() {
-	$('#title').text("Bereken de som van "+a+" + "+b);
-});
-
-function reloadPage() {
-	location.reload();
-}
-
-function checkAntwoord(){
-	var ingevuld;
-	ingevuld = parseInt($('#d').val());
-	if (ingevuld === ""){
-		$('p#antwoord').text("vul het in! Zo moeilijk is de som niet.");
-		}
-	else if (c == ingevuld){
-		$('p#antwoord').text("Goed Gedaan.");
-		}
-	else{
-		$('p#antwoord').text("dommerik");
-		}
-		
-	 setTimeout(reloadPage, 1000);
-}
-
-</script>
 </head>
 <body>
     <!-- de som -->
@@ -62,6 +28,42 @@ function checkAntwoord(){
 	<center>
 	<div id="hoofdmenu">
 	<form action="" method="post" id="theForm" >
+				<script>
+
+	
+
+				var a=Math.floor(Math.random()*101);
+				var b=Math.floor(Math.random()*101);
+				var c= a+b
+
+
+
+				document.addEventListener("deviceready", titel, false);
+				function titel() {
+					$('#title').text("Bereken de som van " + a+ "+"+b);
+				}
+
+				function reloadPage() {
+				location.reload();
+					}
+
+			function checkAntwoord(){
+			var ingevuld;
+			ingevuld = parseInt($('#d').val());
+			if (ingevuld === ""){
+				$('p#antwoord').text("vul het in! Zo moeilijk is de som niet.");
+			}
+			else if (c == ingevuld){
+				$('p#antwoord').text("Goed Gedaan.");
+			}
+			else{
+				$('p#antwoord').text("dommerik");
+			}
+		
+				setTimeout(reloadPage, 1000);
+			}
+
+			</script>
             <p id="title"></p>
 			<div><label for="aantal">totaal</label> <input type="number" name="d" id="d"/></div>
 			<div><a href="#" onclick="checkAntwoord()"> <img src="images/controleren.png"> </a></div>
