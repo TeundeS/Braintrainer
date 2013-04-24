@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <title>Shopping Calculator</title>
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- PhoneGap -->
+	<script src="phonegap.js" type="text/javascript"></script>
+
+	<!-- jQuery Mobile -->
+	<link rel="stylesheet" href="css/jquery.mobile.css" />
+	<script src="js/jquery.js"></script>
+	<!--<script src="js/jquery.mobile.js"></script>-->
+
+	<!-- Jouw App -->
+	<script src="js/logic.js" type="text/javascript"></script>
+	<link href="css/style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/styles.css">
+	
+	<script language="Javascript">
+<!--
+	
+
+var a=Math.floor(Math.random()*1000001);
+var b=Math.floor(Math.random()*1000001);
+var c= a-b
+//-->
+
+
+$('document').ready(function() {
+	$('#title').text("Bereken het verschil van "+a+" - "+b);
+});
+
+function reloadPage() {
+	location.reload();
+}
+
+function checkAntwoord(){
+	var ingevuld;
+	ingevuld = parseInt($('#d').val());
+	if (ingevuld === ""){
+		$('p#antwoord').text("vul het in! Zo moeilijk is de som niet.");
+		}
+	else if (c == ingevuld){
+		$('p#antwoord').text("Goed Gedaan.");
+		}
+	else{
+		$('p#antwoord').text("dommerik");
+		}
+		
+	 setTimeout(reloadPage, 1000);
+}
+
+</script>
+</head>
+<body>
+    <!-- de som -->
+    <a href="index.html" data-transition="turn" data-direction="reverse"> <img src="images/homebutton.png" alt="home.png"></a>
+	
+	<center>
+	<div id="hoofdmenu">
+	<form action="" method="post" id="theForm" >
+            <p id="title"></p>
+			<div><label for="aantal">totaal</label> <input type="number" name="d" id="d"/></div>
+			<div><a href="#" onclick="checkAntwoord()"> <img src="images/controleren.png"> </a></div>
+    </form>
+	   <p id="antwoord"></p>
+	</div>
+	</center>
+
+	<div id="terug">
+	<a href="aftrekken.html" data-transition="turn" data-direction="reverse"> <img src="images/terug.png" alt="terug"></a>
+	</div>
+    
+
+</body>

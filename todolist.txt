@@ -1,0 +1,40 @@
+UPDATE 22-04-13 1 DAG VOOR DEADLINE. 
+
+Afbeeldingen voor - app-plaatje maken
+				  
+
+met Robert kletsen over groot probleem (als mogelijk is). 
+
+				  
+
+
+
+
+
+
+De volgende random getallen hanteer ik telkens:
+
+Optellen:
+	makkelijk: 0-10
+	gemiddeld: 0-100
+	moeilijk:  0-10.000
+	onmogelijk:0-1.000.000 
+ 
+aftrekken:
+	makkelijk: 0-10
+	gemiddeld: 0-100
+	moeilijk:  0-10.000
+	onmogelijk:0-1.000.000
+
+vermenigvuldigen:
+	makkelijk: 0-5
+	gemiddeld: 0-10
+	moeilijk:  0- 100
+	onmogelijk:0-1.000
+
+gedeeld door:
+	makkelijk: 0-5
+	gemiddeld: 0-10
+	moeilijk:  0-100
+	onmogelijk:0-10.000
+
