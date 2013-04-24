@@ -28,11 +28,10 @@ var b=Math.floor(Math.random()*11);
 var c= a+b;
 //-->
 
-document.addEventListener("deviceready", deviceReady, false);
-
-function deviceReady() {
+document.addEventListener("deviceready", titel, false);
+function titel() {
 	$('#title').text("Bereken de som van "+a+" + "+b);
-};
+}
 
 function reloadPage() {
 	location.reload();
