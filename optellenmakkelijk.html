@@ -21,10 +21,6 @@
 	
 	<script language="Javascript">
 
-var a=Math.floor(Math.random()*11);
-var b=Math.floor(Math.random()*11);
-var c= a+b;
-
 function reloadPage() {
 	location.reload();
 }
@@ -55,9 +51,12 @@ function checkAntwoord(){
 	<div id="hoofdmenu">
 	<form action="" method="post" id="theForm" >
 			<script>
+				var a=Math.floor(Math.random()*11);
+				var b=Math.floor(Math.random()*11);
+				var c= a+b;
 				document.addEventListener("deviceready", titel, false);
 				function titel() {
-					$('#title').text("Bereken de som van "+a+" + "+b);
+					$('#title').text("Bereken de som van " + a);
 				}
 			</script>
             <p id="title"></p>
