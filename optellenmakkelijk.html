@@ -19,7 +19,7 @@
 	<link href="css/style.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/styles.css">
 	
-	<script language="Javascript">
+	<script>
 
 function reloadPage() {
 	location.reload();
@@ -30,13 +30,13 @@ function checkAntwoord(){
 	ingevuld = parseInt($('#d').val());
 	if (ingevuld === ""){
 		$('p#antwoord').text("vul het in! Zo moeilijk is de som niet.");
-		}
+	}
 	else if (c == ingevuld){
 		$('p#antwoord').text("goed gedaan");
-		}
+	}
 	else{
 		$('p#antwoord').text("dommerik");
-		}
+	}
 		
 	 setTimeout(reloadPage, 1000);
 }
@@ -54,6 +54,7 @@ function checkAntwoord(){
 				var a=Math.floor(Math.random()*11);
 				var b=Math.floor(Math.random()*11);
 				var c= a+b;
+				
 				document.addEventListener("deviceready", titel, false);
 				function titel() {
 					$('#title').text("Bereken de som van " + a+ "+"+b);
