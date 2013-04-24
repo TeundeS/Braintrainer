@@ -19,20 +19,30 @@
 	<link href="css/style.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/styles.css"/>
 	
-	<script language="Javascript">
-<!--
+
+</head>
+<body>
+    <!-- de som -->
+    <a href="index.html" data-transition="turn" data-direction="reverse"> <img src="images/homebutton.png" alt="home.png"></a>
+	
+	<center>
+	<div id="hoofdmenu">
+	<form action="" method="post" id="theForm" >
+            	<script>
+
 	
 
 var a=Math.floor(Math.random()*10000+1);
 var b=Math.floor(Math.random()*10000+1);
 var c= a/b
 var e= c.toFixed(2);
-//-->
 
 
-$('document').ready(function() {
-	$('#title').text("Bereken de quoti\353nt van "+a+" / "+b);
-});
+
+document.addEventListener("deviceready", titel, false);
+				function titel() {
+					$('#title').text("Bereken de quoti\353nt van " + a+ "/"+b);
+				}
 
 function reloadPage() {
 	location.reload();
@@ -55,15 +65,7 @@ function checkAntwoord(){
 }
 
 </script>
-</head>
-<body>
-    <!-- de som -->
-    <a href="index.html" data-transition="turn" data-direction="reverse"> <img src="images/homebutton.png" alt="home.png"></a>
-	
-	<center>
-	<div id="hoofdmenu">
-	<form action="" method="post" id="theForm" >
-            <p id="title"></p>
+			<p id="title"></p>
 			<div><label for="aantal">totaal</label> <input type="number" name="d" id="d"/></div>
 			<div><a href="#" onclick="checkAntwoord()"> <img src="images/controleren.png"> </a></div>
     </form>
